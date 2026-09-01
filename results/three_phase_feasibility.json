@@ -1,0 +1,346 @@
+{
+  "created_utc": "2026-08-30T18:37:07.342770+00:00",
+  "eligible_for_three_phase_subset": false,
+  "n_grids": 13,
+  "n_success": 0,
+  "policy": "No zero-sequence or short-circuit parameters are imputed.",
+  "rows": [
+    {
+      "error": "'x0x_max'",
+      "error_type": "KeyError",
+      "grid_id": "cigre_mv",
+      "missing_native_parameters": {
+        "ext_grid": [
+          "x0x_max",
+          "r0x0_max"
+        ],
+        "line": [
+          "r0_ohm_per_km",
+          "x0_ohm_per_km",
+          "c0_nf_per_km"
+        ],
+        "trafo": [
+          "vk0_percent",
+          "vkr0_percent",
+          "mag0_percent",
+          "mag0_rx",
+          "si0_hv_partial"
+        ]
+      },
+      "success": false
+    },
+    {
+      "error": "short circuit apparent power s_sc_max_mva needs to be specified for external grid \n Try: net.ext_grid['s_sc_max_mva'] = 1000",
+      "error_type": "ValueError",
+      "grid_id": "rural_0",
+      "missing_native_parameters": {
+        "ext_grid": [
+          "s_sc_max_mva",
+          "rx_max",
+          "x0x_max",
+          "r0x0_max"
+        ],
+        "line": [
+          "r0_ohm_per_km",
+          "x0_ohm_per_km",
+          "c0_nf_per_km"
+        ],
+        "trafo": [
+          "vk0_percent",
+          "vkr0_percent",
+          "mag0_percent",
+          "mag0_rx",
+          "si0_hv_partial"
+        ]
+      },
+      "success": false
+    },
+    {
+      "error": "short circuit apparent power s_sc_max_mva needs to be specified for external grid \n Try: net.ext_grid['s_sc_max_mva'] = 1000",
+      "error_type": "ValueError",
+      "grid_id": "rural_1",
+      "missing_native_parameters": {
+        "ext_grid": [
+          "s_sc_max_mva",
+          "rx_max",
+          "x0x_max",
+          "r0x0_max"
+        ],
+        "line": [
+          "r0_ohm_per_km",
+          "x0_ohm_per_km",
+          "c0_nf_per_km"
+        ],
+        "trafo": [
+          "vk0_percent",
+          "vkr0_percent",
+          "mag0_percent",
+          "mag0_rx",
+          "si0_hv_partial"
+        ]
+      },
+      "success": false
+    },
+    {
+      "error": "short circuit apparent power s_sc_max_mva needs to be specified for external grid \n Try: net.ext_grid['s_sc_max_mva'] = 1000",
+      "error_type": "ValueError",
+      "grid_id": "rural_2",
+      "missing_native_parameters": {
+        "ext_grid": [
+          "s_sc_max_mva",
+          "rx_max",
+          "x0x_max",
+          "r0x0_max"
+        ],
+        "line": [
+          "r0_ohm_per_km",
+          "x0_ohm_per_km",
+          "c0_nf_per_km"
+        ],
+        "trafo": [
+          "vk0_percent",
+          "vkr0_percent",
+          "mag0_percent",
+          "mag0_rx",
+          "si0_hv_partial"
+        ]
+      },
+      "success": false
+    },
+    {
+      "error": "short circuit apparent power s_sc_max_mva needs to be specified for external grid \n Try: net.ext_grid['s_sc_max_mva'] = 1000",
+      "error_type": "ValueError",
+      "grid_id": "semiurb_0",
+      "missing_native_parameters": {
+        "ext_grid": [
+          "s_sc_max_mva",
+          "rx_max",
+          "x0x_max",
+          "r0x0_max"
+        ],
+        "line": [
+          "r0_ohm_per_km",
+          "x0_ohm_per_km",
+          "c0_nf_per_km"
+        ],
+        "trafo": [
+          "vk0_percent",
+          "vkr0_percent",
+          "mag0_percent",
+          "mag0_rx",
+          "si0_hv_partial"
+        ]
+      },
+      "success": false
+    },
+    {
+      "error": "short circuit apparent power s_sc_max_mva needs to be specified for external grid \n Try: net.ext_grid['s_sc_max_mva'] = 1000",
+      "error_type": "ValueError",
+      "grid_id": "semiurb_1",
+      "missing_native_parameters": {
+        "ext_grid": [
+          "s_sc_max_mva",
+          "rx_max",
+          "x0x_max",
+          "r0x0_max"
+        ],
+        "line": [
+          "r0_ohm_per_km",
+          "x0_ohm_per_km",
+          "c0_nf_per_km"
+        ],
+        "trafo": [
+          "vk0_percent",
+          "vkr0_percent",
+          "mag0_percent",
+          "mag0_rx",
+          "si0_hv_partial"
+        ]
+      },
+      "success": false
+    },
+    {
+      "error": "short circuit apparent power s_sc_max_mva needs to be specified for external grid \n Try: net.ext_grid['s_sc_max_mva'] = 1000",
+      "error_type": "ValueError",
+      "grid_id": "semiurb_2",
+      "missing_native_parameters": {
+        "ext_grid": [
+          "s_sc_max_mva",
+          "rx_max",
+          "x0x_max",
+          "r0x0_max"
+        ],
+        "line": [
+          "r0_ohm_per_km",
+          "x0_ohm_per_km",
+          "c0_nf_per_km"
+        ],
+        "trafo": [
+          "vk0_percent",
+          "vkr0_percent",
+          "mag0_percent",
+          "mag0_rx",
+          "si0_hv_partial"
+        ]
+      },
+      "success": false
+    },
+    {
+      "error": "short circuit apparent power s_sc_max_mva needs to be specified for external grid \n Try: net.ext_grid['s_sc_max_mva'] = 1000",
+      "error_type": "ValueError",
+      "grid_id": "urban_0",
+      "missing_native_parameters": {
+        "ext_grid": [
+          "s_sc_max_mva",
+          "rx_max",
+          "x0x_max",
+          "r0x0_max"
+        ],
+        "line": [
+          "r0_ohm_per_km",
+          "x0_ohm_per_km",
+          "c0_nf_per_km"
+        ],
+        "trafo": [
+          "vk0_percent",
+          "vkr0_percent",
+          "mag0_percent",
+          "mag0_rx",
+          "si0_hv_partial"
+        ]
+      },
+      "success": false
+    },
+    {
+      "error": "short circuit apparent power s_sc_max_mva needs to be specified for external grid \n Try: net.ext_grid['s_sc_max_mva'] = 1000",
+      "error_type": "ValueError",
+      "grid_id": "urban_1",
+      "missing_native_parameters": {
+        "ext_grid": [
+          "s_sc_max_mva",
+          "rx_max",
+          "x0x_max",
+          "r0x0_max"
+        ],
+        "line": [
+          "r0_ohm_per_km",
+          "x0_ohm_per_km",
+          "c0_nf_per_km"
+        ],
+        "trafo": [
+          "vk0_percent",
+          "vkr0_percent",
+          "mag0_percent",
+          "mag0_rx",
+          "si0_hv_partial"
+        ]
+      },
+      "success": false
+    },
+    {
+      "error": "short circuit apparent power s_sc_max_mva needs to be specified for external grid \n Try: net.ext_grid['s_sc_max_mva'] = 1000",
+      "error_type": "ValueError",
+      "grid_id": "urban_2",
+      "missing_native_parameters": {
+        "ext_grid": [
+          "s_sc_max_mva",
+          "rx_max",
+          "x0x_max",
+          "r0x0_max"
+        ],
+        "line": [
+          "r0_ohm_per_km",
+          "x0_ohm_per_km",
+          "c0_nf_per_km"
+        ],
+        "trafo": [
+          "vk0_percent",
+          "vkr0_percent",
+          "mag0_percent",
+          "mag0_rx",
+          "si0_hv_partial"
+        ]
+      },
+      "success": false
+    },
+    {
+      "error": "short circuit apparent power s_sc_max_mva needs to be specified for external grid \n Try: net.ext_grid['s_sc_max_mva'] = 1000",
+      "error_type": "ValueError",
+      "grid_id": "comm_0",
+      "missing_native_parameters": {
+        "ext_grid": [
+          "s_sc_max_mva",
+          "rx_max",
+          "x0x_max",
+          "r0x0_max"
+        ],
+        "line": [
+          "r0_ohm_per_km",
+          "x0_ohm_per_km",
+          "c0_nf_per_km"
+        ],
+        "trafo": [
+          "vk0_percent",
+          "vkr0_percent",
+          "mag0_percent",
+          "mag0_rx",
+          "si0_hv_partial"
+        ]
+      },
+      "success": false
+    },
+    {
+      "error": "short circuit apparent power s_sc_max_mva needs to be specified for external grid \n Try: net.ext_grid['s_sc_max_mva'] = 1000",
+      "error_type": "ValueError",
+      "grid_id": "comm_1",
+      "missing_native_parameters": {
+        "ext_grid": [
+          "s_sc_max_mva",
+          "rx_max",
+          "x0x_max",
+          "r0x0_max"
+        ],
+        "line": [
+          "r0_ohm_per_km",
+          "x0_ohm_per_km",
+          "c0_nf_per_km"
+        ],
+        "trafo": [
+          "vk0_percent",
+          "vkr0_percent",
+          "mag0_percent",
+          "mag0_rx",
+          "si0_hv_partial"
+        ]
+      },
+      "success": false
+    },
+    {
+      "error": "short circuit apparent power s_sc_max_mva needs to be specified for external grid \n Try: net.ext_grid['s_sc_max_mva'] = 1000",
+      "error_type": "ValueError",
+      "grid_id": "comm_2",
+      "missing_native_parameters": {
+        "ext_grid": [
+          "s_sc_max_mva",
+          "rx_max",
+          "x0x_max",
+          "r0x0_max"
+        ],
+        "line": [
+          "r0_ohm_per_km",
+          "x0_ohm_per_km",
+          "c0_nf_per_km"
+        ],
+        "trafo": [
+          "vk0_percent",
+          "vkr0_percent",
+          "mag0_percent",
+          "mag0_rx",
+          "si0_hv_partial"
+        ]
+      },
+      "success": false
+    }
+  ],
+  "schema_version": "neurips-grid-three-phase-feasibility-v1"
+}

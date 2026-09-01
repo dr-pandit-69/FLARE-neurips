@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "flare-restoration"
+version = "0.1.0"
+description = "Physics-grounded evaluation of language-model agents for feeder restoration"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+  "accelerate",
+  "bitsandbytes",
+  "huggingface_hub",
+  "matplotlib",
+  "networkx",
+  "numpy",
+  "pandas",
+  "pandapower",
+  "pyarrow",
+  "PyYAML",
+  "scipy",
+  "simbench",
+  "torch",
+  "transformers",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+

@@ -1,0 +1,142 @@
+schema_version: neurips-grid-experiment-v1
+seed: 20260831
+rollout_seed: 20260729
+decoding_seed: 0
+tiers: [clean, sparse, noisy, stale, conflicting]
+generation:
+  max_new_tokens: 256
+  temperature: 0.0
+  top_p: 1.0
+  checkpoint_every: 25
+panels:
+  primary800:
+    path: data/panels/primary800/panel_manifest.json
+  robustness150:
+    path: data/panels/robustness150/panel_manifest.json
+  natural200:
+    path: data/panels/natural200/panel_manifest.json
+  morphology_rural:
+    path: data/panels/morphology_rural/panel_manifest.json
+  morphology_semiurban:
+    path: data/panels/morphology_semiurban/panel_manifest.json
+  morphology_urban:
+    path: data/panels/morphology_urban/panel_manifest.json
+  morphology_commercial:
+    path: data/panels/morphology_commercial/panel_manifest.json
+  topology_ood:
+    path: artifacts/panels/topology_ood/panel_manifest.json
+  generation_ood:
+    path: artifacts/panels/generation_ood/panel_manifest.json
+  load_ood:
+    path: artifacts/panels/load_ood/panel_manifest.json
+models:
+  qwen3b:
+    model_id: Qwen/Qwen2.5-3B-Instruct
+    revision: aa8e72537993ba99e69dfaafa59ed015b17504d1
+    family: Qwen2.5
+    parameters_billion: 3
+    quantization: none
+  qwen7b:
+    model_id: Qwen/Qwen2.5-7B-Instruct
+    revision: a09a35458c702b33eeacc393d103063234e8bc28
+    family: Qwen2.5
+    parameters_billion: 7
+    quantization: none
+  qwen14b:
+    model_id: Qwen/Qwen2.5-14B-Instruct
+    revision: cf98f3b3bbb457ad9e2bb7baf9a0125b6b88caa8
+    family: Qwen2.5
+    parameters_billion: 14
+    quantization: none
+  llama31_8b:
+    model_id: meta-llama/Llama-3.1-8B-Instruct
+    revision: 0e9e39f249a16976918f6564b8830bc894c89659
+    family: Llama-3.1
+    parameters_billion: 8
+    quantization: none
+  gemma4_12b:
+    model_id: google/gemma-4-12B-it
+    revision: 707f0a3b8a3c7ad586ed01e27eafbad8a27dd0f7
+    family: Gemma-4
+    parameters_billion: 12
+    quantization: none
+  mistral24b:
+    model_id: unsloth/Mistral-Small-3.1-24B-Instruct-2503-bnb-4bit
+    revision: b28a0cfd2f7fe2293e41ad6ab930b184375daa50
+    family: Mistral-Small-3.1
+    parameters_billion: 24
+    quantization: bitsandbytes-4bit
+  llama33_70b_4bit:
+    model_id: unsloth/Llama-3.3-70B-Instruct-bnb-4bit
+    revision: resolve-on-download
+    family: Llama-3.3
+    parameters_billion: 70
+    quantization: bitsandbytes-4bit-cpu-offload
+    conditional: true
+cells:
+  primary_A0:
+    panel: primary800
+    tiers: all
+  robustness_A0:
+    panel: robustness150
+    tiers: all
+  topology_ood_A0:
+    panel: topology_ood
+    tiers: all
+  generation_ood_A0:
+    panel: generation_ood
+    tiers: all
+  load_ood_A0:
+    panel: load_ood
+    tiers: all
+  morphology_rural_A0:
+    panel: morphology_rural
+    tiers: all
+  morphology_semiurban_A0:
+    panel: morphology_semiurban
+    tiers: all
+  morphology_urban_A0:
+    panel: morphology_urban
+    tiers: all
+  morphology_commercial_A0:
+    panel: morphology_commercial
+    tiers: all
+  true_state:
+    panel: primary800
+    tiers: [noisy, conflicting]
+    true_state: true
+  no_tie_ranking:
+    panel: primary800
+    tiers: [noisy]
+    rank_ties: false
+  no_simulator:
+    panel: primary800
+    tiers: [noisy]
+    allowed_verbs: [observe_scada, observe_calls, crew_inspect, read_fault_indicator, test_switch, operate_switch, open_switch, end_episode]
+  no_memory:
+    panel: primary800
+    tiers: [noisy]
+    use_memory: false
+  schema_only:
+    panel: primary800
+    tiers: [noisy, conflicting]
+    briefing: schema_only
+  reliability_seed0: {panel: natural200, tiers: [noisy, conflicting], temperature: 0.7, top_p: 0.9, decoding_seed: 0}
+  reliability_seed1: {panel: natural200, tiers: [noisy, conflicting], temperature: 0.7, top_p: 0.9, decoding_seed: 1}
+  reliability_seed2: {panel: natural200, tiers: [noisy, conflicting], temperature: 0.7, top_p: 0.9, decoding_seed: 2}
+  reliability_seed3: {panel: natural200, tiers: [noisy, conflicting], temperature: 0.7, top_p: 0.9, decoding_seed: 3}
+  reliability_seed4: {panel: natural200, tiers: [noisy, conflicting], temperature: 0.7, top_p: 0.9, decoding_seed: 4}
+ood:
+  target_cases: 200
+  topology_variants_per_grid: 1
+  generation_multiplier: 1.5
+  generation_fallback_multiplier: 1.25
+  load_target_pct: 95.0
+  source_events: data/source/e17_events.jsonl
+  source_grids: data/processed/substrate_v1/distribution_grids
+  source_series: data/processed/substrate_v1/series
+  observation_model: data/processed/substrate_v1/observation/obs_model.json
+analysis:
+  bootstrap_replicates: 2000
+  tail_threshold: 0.5
+  transcript_cases_per_tier: 10

@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.venv/
+venv/
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+*.pem
+
+# Model caches and weights
+.cache/
+models/
+*.bin
+*.gguf
+*.safetensors
+
+# Large or generated experiment data
+data/
+artifacts/panels/
+runs/
+outputs/
+
+# Runtime output
+*.log
+*.out
+*.err
+slurm-*.out
+
+# Generated report assets
+artifacts/analysis/
+artifacts/physics/
+artifacts/provenance/
+artifacts/verification/
+paper/generated/
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/
+

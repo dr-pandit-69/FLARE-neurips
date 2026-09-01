@@ -1,0 +1,52 @@
+{
+  "created_utc": "2026-08-30T22:46:24.452663+00:00",
+  "cross_panel_selected_event_overlap": {
+    "generation_ood__load_ood": 25,
+    "topology_ood__generation_ood": 20,
+    "topology_ood__load_ood": 26
+  },
+  "errors": [],
+  "panels": [
+    {
+      "errors": [],
+      "n_initial_pf_feasible": 200,
+      "n_proven_optimal": 200,
+      "n_selected": 200,
+      "n_source_events": 600,
+      "n_unique_source_event_ids": 600,
+      "n_variants": 12,
+      "operating_parameter_max": 1.5363,
+      "operating_parameter_min": 0.7669,
+      "panel": "topology_ood",
+      "passed": true
+    },
+    {
+      "errors": [],
+      "n_initial_pf_feasible": 200,
+      "n_proven_optimal": 200,
+      "n_selected": 200,
+      "n_source_events": 600,
+      "n_unique_source_event_ids": 600,
+      "n_variants": 4,
+      "operating_parameter_max": 1.5,
+      "operating_parameter_min": 1.5,
+      "panel": "generation_ood",
+      "passed": true
+    },
+    {
+      "errors": [],
+      "n_initial_pf_feasible": 200,
+      "n_proven_optimal": 200,
+      "n_selected": 200,
+      "n_source_events": 600,
+      "n_unique_source_event_ids": 600,
+      "n_variants": 7,
+      "operating_parameter_max": 1.36263,
+      "operating_parameter_min": 1.00167,
+      "panel": "load_ood",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "schema_version": "neurips-grid-panel-audit-v1"
+}
