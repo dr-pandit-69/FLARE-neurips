@@ -1,4 +1,4 @@
-# FLARE [ Oral-Accept @ AI Foundations for Power Grids, NeurIPS 2026, Sydne ]
+# FLARE [ Oral-Accept @ AI Foundations for Power Grids, NeurIPS 2026, Sydney ]
 
 FLARE (Feeder-Level Agent Restoration Evaluation) is a physics-grounded
 benchmark for evaluating language-model agents on post-isolation distribution
